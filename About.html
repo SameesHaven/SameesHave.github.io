@@ -67,6 +67,12 @@ body {
   color: var(--accent-color);
 }
 
+
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
 .hero {
   height: 120vh;
   display: flex;
@@ -207,6 +213,44 @@ body {
       border: 2px solid var(--accent-color);
       margin: 1rem auto 2rem auto;
     }
+
+     @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--primary-color);
+        padding: 1rem;
+        width: 100%;
+        display: none;
+      }
+
+      .navbar.active .nav-links {
+        display: flex;
+      }
+         .navbar {
+        padding: 1rem;
+      }
+
+      .logo img {
+        height: 80px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+    }
+
    </style>
 </head>
 <body>
@@ -214,9 +258,10 @@ body {
      <div class="logo">
       <img src="Images/Logo.PNG" alt="LuxStay Logo">
     </div>
-    <nav>
+      <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul class="nav-links">
-         <li><a href="Home.html">HOME</a></li>
+        <li><a href="Home.html">HOME</a></li>
         <li><a href="About.html">ABOUT</a></li>
         <li><a href="Listings.html">LISTINGS</a></li>
         <li><a href="Contact.html">CONTACT</a></li>
@@ -243,5 +288,11 @@ body {
   <footer class="footer">
     <p>&copy; 2025 Samee's Haven. All rights reserved.</p>
   </footer>
+   <script>
+    function toggleMenu() {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
