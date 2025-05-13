@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samee's Haven-About</title>
+    <style>
+    :root {
+  --primary-color: #d8d5d0;
+  --accent-color: #928b81;
+  --text-color: #5a4b34;
+  --font-family: 'Rockwell', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed; /* Fix the header to the top */
+  top: 0; /* Position it at the top */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Ensure the navbar spans the full width of the viewport */
+  z-index: 1000; /* Ensure it appears on top of other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: ease-in-out;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 120px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.hero {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('Images/Room_Placeholder.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(33, 32, 32, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #786950;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-top: none;
+}
+
+.footer p {
+  color: var(--text-color);
+}
+
+.listings-heading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.listings-heading h1 {
+  color: var(--accent-color);
+  font-size: 2.5rem;
+}
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.listing-card {
+  background-color: #111;
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.listing-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.listing-card h3 {
+  color: var(--accent-color);
+  margin: 0.5rem 0;
+}
+
+.listing-card p {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.listing-card:hover {
+  transform: scale(1.03);
+}
+
+.logobig-section {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  text-align: center;
+  border-bottom: none;
+}
+
+.logobig-section img {
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+
+    .about-section {
+      padding: 4rem 2rem;
+      background-color: var(--primary-color);
+      text-align: center;
+      margin-top: 120px; /* Offset for fixed navbar */
+    }
+
+    .about-section h2 {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .about-section p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+      color: var(--text-color);
+      line-height: 1.8;
+    }
+
+    .about-section hr {
+      width: 50px;
+      border: 2px solid var(--accent-color);
+      margin: 1rem auto 2rem auto;
+    }
+   </style>
+</head>
+<body>
+  <header class="navbar">
+     <div class="logo">
+      <img src="Logo.png" alt="LuxStay Logo">
+    </div>
+    <nav>
+      <ul class="nav-links">
+         <li><a href="Home.html">HOME</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Listings.html">LISTINGS</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero-content">
+    <section class="hero-content">
+        <section class="about-section">
+    <h2>About Samee's Haven</h2>
+    <hr />
+    <p>
+      Welcome to Samee's Haven, where comfort meets luxury. We are dedicated to providing our guests with a unique, personalized experience that makes them feel right at home. With beautifully designed spaces and top-tier amenities, our goal is to offer a haven for relaxation, creativity, and unforgettable memories.
+    </p>
+    <p>
+      Our mission is to create a welcoming environment that blends modern comfort with timeless elegance, ensuring every stay is a remarkable one.
+    </p>
+  </section>
+     
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Samee's Haven. All rights reserved.</p>
+  </footer>
+</body>
+</html>

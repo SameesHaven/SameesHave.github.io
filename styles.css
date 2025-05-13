@@ -1,0 +1,174 @@
+:root {
+  --primary-color: #d8d5d0;
+  --accent-color: #928b81;
+  --text-color: #5a4b34;
+  --font-family: 'Rockwell', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  background-image: url('Images/Room_Placeholder.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 120px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://source.unsplash.com/1600x900/?luxury,interior');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(33, 32, 32, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #786950;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-top: 1px solid var(--accent-color);
+  margin-top: 2rem;
+}
+
+.footer p {
+  color: var(--text-color);
+}
+
+
+    .listings-heading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.listings-heading h1 {
+  color: var(--accent-color);
+  font-size: 2.5rem;
+    }
+
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.listing-card {
+  background-color: #111;
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.listing-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.listing-card h3 {
+  color: var(--accent-color);
+  margin: 0.5rem 0;
+}
+
+.listing-card p {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.listing-card:hover {
+  transform: scale(1.03);
+}
+
+.logobig {
+  --primary-color: #d8d5d0;
+  --accent-color: #928b81;
+  --text-color: #5a4b34;
+  --font-family: 'Rockwell', Tahoma, Geneva, Verdana, sans-serif;
+  
+  
+
+}
+ 

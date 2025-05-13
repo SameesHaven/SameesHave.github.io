@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samee's Haven</title>
+   <style>
+    :root {
+  --primary-color: #d8d5d0;
+  --accent-color: #928b81;
+  --text-color: #5a4b34;
+  --font-family: 'Rockwell', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed; /* Fix the header to the top */
+  top: 0; /* Position it at the top */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Ensure the navbar spans the full width of the viewport */
+  z-index: 1000; /* Ensure it appears on top of other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease;
+  opacity: ease-in-out;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 120px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.hero {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('Images/Room_Placeholder.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(211, 206, 199, 100);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--text-color);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-top: none;
+}
+
+.footer p {
+  color: var(--text-color);
+}
+
+.contact-wrapper {
+  background-color: var(--primary-color);
+  padding: 5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section {
+  width: 90%;
+  max-width: 1000px;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: var(--text-color);
+  border: 1px solid var(--accent-color);
+}
+
+.contact-section h2 {
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.contact-section button {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-section button:hover {
+  background-color:  var(--text-color);;
+}
+
+.logobig-section img {
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+   </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="Logo.png" alt="LuxStay Logo">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Listings.html">LISTINGS</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    
+   <section class="hero">
+      <div class="hero-content">
+        <h1>Get In touch </h1>
+        <!-- Modify the Browse Listings button to trigger scroll behavior with JavaScript -->
+        <a href="javascript:void(0);" class="btn" id="browse-btn">Leave your queries below</a>
+      </div>
+    </section>
+
+    <!-- Contact Section with an id to allow smooth scrolling -->
+    <section class="contact-wrapper" id="contact-section">
+      <div class="contact-section">
+        <h2>Message Us</h2>
+        <form action="https://formspree.io/f/mjkwodaz" method="POST">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      
+    </section>
+    
+
+    <!-- Combined Logo and Footer Section -->
+    
+      <footer class="footer">
+        <p>&copy; 2025 Samee's Haven. All rights reserved.</p>
+      </footer>
+  </main>
+
+  <script>
+    // Get the button element and the contact section
+    const browseBtn = document.getElementById('browse-btn');
+    const contactSection = document.getElementById('contact-section');
+
+    // Add click event to the button
+    browseBtn.addEventListener('click', () => {
+      // Scroll to the contact section smoothly
+      contactSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>
