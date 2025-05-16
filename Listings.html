@@ -3,34 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Samee's Haven-Listings </title>
-   <style>
+  <title>Samee's Haven-About</title>
+    <style>
     :root {
-      --primary-color: #d8d5d0;
-      --accent-color: #928b81;
-      --text-color: #5a4b34;
-      --font-family: 'Rockwell', Tahoma, Geneva, Verdana, sans-serif;
-    }
+  --primary-color: #d8d5d0;
+  --accent-color: #928b81;
+  --text-color: #5a4b34;
+  --font-family: 'Rockwell', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: var(--font-family);
-      background-color: var(--primary-color);
-      color: var(--text-color);
-      line-height: 1.6;
-      background-image: url('Images/Room_Placeholder.jpg'); /* Replace with your image URL or file name */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-    }
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
 
-   .navbar {
+.navbar {
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
@@ -44,32 +39,33 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   opacity: ease-in-out;
 }
-      .logo {
-      display: flex;
-      align-items: center;
-    }
 
-    .logo img {
-      height: 120px;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+}
 
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-    }
+.logo img {
+  height: 120px;
+}
 
-    .nav-links a {
-      text-decoration: none;
-      color: var(--text-color);
-      font-weight: 500;
-      transition: color 0.3s ease;
-      font-size: 20px;
-    }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
 
-    .nav-links a:hover {
-      color: var(--accent-color);
-    }
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
 
 
     .menu-toggle {
@@ -77,39 +73,47 @@
       font-size: 2rem;
       cursor: pointer;
     }
-
-    .hero {
+.hero {
   height: 120vh;
-  
-
-}
-
-    .listings-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('Images/Pic2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
-  padding: 20rem;
-
 }
 
-.listings-heading h1 {
-  color: var(--accent-color);
-  font-size: 2.5rem;
-    }
+.hero-content {
+ display: flex;
+}
 
-    .btn {
-      background-color: var(--accent-color);
-      color: var(--primary-color);
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-    .btn:hover {
-      background-color: #bfa133;
-    }
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
 
-    .footer {
+.btn {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #786950;
+}
+
+.footer {
   text-align: center;
   padding: 1rem;
   background-color: var(--primary-color);
@@ -120,8 +124,15 @@
   color: var(--text-color);
 }
 
+.listings-heading {
+  text-align: center;
+  padding: 2rem;
+}
 
-
+.listings-heading h1 {
+  color: var(--accent-color);
+  font-size: 2.5rem;
+}
 
 .listings-grid {
   display: grid;
@@ -160,6 +171,41 @@
   transform: scale(1.03);
 }
 
+.logobig-section {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  text-align: center;
+  border-bottom: none;
+}
+
+.logobig-section img {
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+
+    .about-section {
+      padding: 4rem 2rem;
+
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-section p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+      line-height: 1.8;
+    }
+
+    .about-section hr {
+      width: 50px;
+      margin: 1rem auto 2rem auto;
+    }
 
      @media (max-width: 768px) {
       .nav-links {
@@ -198,92 +244,39 @@
       }
     }
 
-
-
-  </style>
-  
+   </style>
 </head>
-
 <body>
   <header class="navbar">
-   
-    <div class="logo">
+     <div class="logo">
       <img src="Images/Logo.PNG" alt="LuxStay Logo">
     </div>
-  
-    <nav>
-       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul class="nav-links">
-         <li><a href="Home.html">HOME</a></li>
+        <li><a href="Home.html">HOME</a></li>
         <li><a href="About.html">ABOUT</a></li>
         <li><a href="Listings.html">LISTINGS</a></li>
         <li><a href="Contact.html">CONTACT</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main class="hero">
+    <section class="hero-content">
+        <section class="about-section">
+    <h2>LISTINGS COMING SOON</h2>
    
-    <section class="listings-heading">
-      <h1>Listings</h1>
+  </section>
+     
     </section>
-
-
-<section class="listings-grid">
-  <div class="listing-card">
-    <iframe
-    src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.98389229831!2d-1.5075047229614127!3d52.40696814459157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774bb9be186705%3A0x83beabca8c39bae0!2sThe%20Hub%20-%20Coventry%20University!5e0!3m2!1sen!2suk!4v1746817847941!5m2!1sen!2suk" 
-    width="600"
-    height="450"
-    style="border:0; border-radius: 10px;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
- <h3>The Hub</h3>
- <p>Priory St</p>
- <p>£250/night</p>
- 
-</div>
-  <div class="listing-card">
-     <iframe
-    src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.9977912657378!2d-1.5072149229613812!3d52.40671624461012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774bb995d04fbd%3A0xa2737fe044f57931!2sEllen%20Terry%20-%20Coventry%20University!5e0!3m2!1sen!2suk!4v1746819110760!5m2!1sen!2suk"
-    width="600"
-    height="450"
-    style="border:0; border-radius: 10px;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe> 
-  <h3>Ellen Terry</h3>
-    <p> Jordan Wl </p>
-    <p> $400/night </p>
-  </div>
- 
- 
-  <div class="listing-card">
-    <iframe
-    src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.0338709778684!2d-1.5031814229614247!3d52.406062344658515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774bbba23b401f%3A0x784ad48e50ea81a0!2sLanchester%20Library!5e0!3m2!1sen!2suk!4v1746820028836!5m2!1sen!2suk"
-    width="600"
-    height="450"
-    style="border:0; border-radius: 10px;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-    <h3>Lancaster Library</h3>
-    <p>Gosford St</p>
-   <p>£180/night</p>
-  </div>
-
-
-</main>
+  </main>
 
   <footer class="footer">
+    
     <p>&copy; 2025 Samee's Haven. All rights reserved.</p>
   </footer>
-    <script>
+   <script>
     function toggleMenu() {
       const navbar = document.querySelector('.navbar');
       navbar.classList.toggle('active');
